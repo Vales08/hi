@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Letter</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            text-align: center;
+            background-color: #f0e5de;
+            background-image: url('https://i.imgur.com/hYvN4xM.png'); /* A heart background */
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin-top: 50px;
+            font-size: 1.4em;
+            color: #444;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            margin-top: 30px;
+        }
+        .cat {
+            margin-top: 30px;
+            width: 100px;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ffb6c1;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello!</h1>
+    <p>Do you want to open the letter?</p>
+    <button onclick="showMessage()">Yes</button>
+    <button onclick="showMessage()">Of cuss bby</button>
+
+    <div id="letter" class="hidden">
+        <div class="message">
+            <p>Good job for your project hehe, I think u did great! Big hugs and kiessesss <3</p>
+            <p>Although u always so busy :') but I rlly rlly like u and wanna spend more time with u and squish ur ass hehe.</p>
+            <p>See u tmrrr?</p>
+        </div>
+        <div class="heart">❤️</div>
+        <img src="https://i.imgur.com/jyTjJbz.gif" alt="cute cat walking" class="cat">
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('letter').classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
